@@ -30,18 +30,29 @@ export const App = ()=>{
 const NetFLixCard = ()=>{
   const Nam = "Outsider";
   const Rat = 90;
+  const age = 19;
+
+  const watch = ()=>{
+    if(age>=18) return "Watch Now";
+    return "Not Avialiable"
+  }
+  // let canwatch = "Not avaialable";
+  // if(age>=18) canwatch ="Watch Now";
   function Gen(){
     return "RomCom";
   }
   return(
     <>
-      <>
+    <div>
       <img src="img1.jpg" alt="" width="20%" height="30%"/>
-      </>
+    </div>
       <h3>Name:{Nam}</h3>
       <h5>Rating:{Rat/10}</h5>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempora eveniet eligendi! Adipisci, veritatis.</p>
       <p>Genere:{Gen()}</p>
+      {/* <button>{age>=18 ? "Watch Now" : "Not Available"}</button> */}
+      {/* <button>{canwatch}</button> */}
+      <button>{watch()}</button>
     </>
   )
 }
