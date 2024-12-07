@@ -1,5 +1,6 @@
 //---------------------------React Basic Rules-------------------------------------------
 //return only one element if multi elements enclose(wrap) it in one tag (div) for non closing tags like img tag enclose it in div tag
+//React never renders false,null,undefined,NaN values
 
 //-----------------------------React Fragments-----------------------
 //react fragments <React.Fragments></React.Fragments> or <Fragments></Fragments> or just <></>
@@ -52,6 +53,7 @@ const NetFLixCard = ()=>{
       <p>Genere:{Gen()}</p>
       {/* <button>{age>=18 ? "Watch Now" : "Not Available"}</button> */}
       {/* <button>{canwatch}</button> */}
+      {/* <button>{age>=18 && "Watch Now"}</button> */}
       <button>{watch()}</button>
     </>
   )
