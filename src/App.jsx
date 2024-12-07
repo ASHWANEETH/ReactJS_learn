@@ -10,7 +10,7 @@
 //Below is componet
 //component is function which returns jsx element
 
-//---------------------------JS in Html-----------Dynamic Values
+//---------------------------JS in Html-----------Dynamic Values,Conditional Values
 //by giving {} js can be written in tags , variabes, expressions and function call can be done in that.. that return a value
 
 export const App = ()=>{
