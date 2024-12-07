@@ -4,6 +4,15 @@
 //-----------------------------React Fragments-----------------------
 //react fragments <React.Fragments></React.Fragments> or <Fragments></Fragments> or just <></>
 //this eliminates the node <div> and makes faster render , helps to return multiple elemnts without extra tag
+
+//---------------------------React Components----------------------------------------
+//for img images are stored in public folder and can be directly accesed by name
+//Below is componet
+//component is function which returns jsx element
+
+//---------------------------JS in Html-----------Dynamic Values
+//by giving {} js can be written in tags , variabes, expressions and function call can be done in that.. that return a value
+
 export const App = ()=>{
   return (
     <>
@@ -17,19 +26,22 @@ export const App = ()=>{
   )
 };
 
-//---------------------------React Components----------------------------------------
-//for img images are stored in public folder and can be directly accesed by name
-//Below is componet
-//component is function which returns jsx element
+
 const NetFLixCard = ()=>{
+  const Nam = "Outsider";
+  const Rat = 90;
+  function Gen(){
+    return "RomCom";
+  }
   return(
     <>
       <>
       <img src="img1.jpg" alt="" width="20%" height="30%"/>
       </>
-      <h3>Name:Outsider</h3>
-      <h5>Rating:9</h5>
+      <h3>Name:{Nam}</h3>
+      <h5>Rating:{Rat/10}</h5>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempora eveniet eligendi! Adipisci, veritatis.</p>
+      <p>Genere:{Gen()}</p>
     </>
   )
 }
