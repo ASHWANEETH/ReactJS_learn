@@ -8,7 +8,6 @@
 
 //---------------------------React Components----------------------------------------
 //for img images are stored in public folder and can be directly accesed by name
-//Below is componet
 //component is function which returns jsx element
 
 //---------------------------JS in Html-----------Dynamic Values,Conditional Values
