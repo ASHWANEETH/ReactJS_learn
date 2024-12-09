@@ -11,7 +11,7 @@ export const SeriesCard = (props)=>{
       <h5>Rating:{props.curEle.rating}</h5>
       <p>{props.curEle.description}</p>
       <p>Genere:{props.curEle.genre}</p>
-      <a href={props.curEle.watch_url}><button>Watch Now</button></a>
+      <a href={props.curEle.watch_url} target="_blank"><button>Watch Now</button></a>
       <hr />
       </li>
       
