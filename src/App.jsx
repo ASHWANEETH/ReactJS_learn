@@ -13,6 +13,15 @@
 //---------------------------JS in Html-----------Dynamic Values,Conditional Values
 //by giving {} js can be written in tags , variabes, expressions and function call can be done in that.. that return a value
 
+//--------------------------Import and Export-------------------------------------
+//Default Export and Import:export a single component with ease. !! only single default export for one file
+//------export default component_name------cant be imported in { } and can use any name while importing
+
+// Named Export and Import: export multiple components using named exports.
+//------export const component_name = ()=>{} ------must be imported in { } and must use same name while importing
+
+// Combined Export and Import: combine default and named exports in a single file for more efficient code management.
+//-----Use both exports one default and many named------for import--- import default,{named_1,named_n...} from ".."
 export const App = ()=>{
   return (
     <>
