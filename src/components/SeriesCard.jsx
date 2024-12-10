@@ -1,6 +1,8 @@
 
-export const SeriesCard = ({data,greeting,children})=>{
-  // console.log(props);
+export const SeriesCard = ({data,
+  // greeting,children
+  })=>{
+  
   const {name,
     img_url,
     rating,
