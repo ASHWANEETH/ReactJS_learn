@@ -1,5 +1,5 @@
 
-export const SeriesCard = ({data})=>{
+export const SeriesCard = ({data,greeting,children})=>{
   // console.log(props);
   const {name,
     img_url,
@@ -21,6 +21,8 @@ export const SeriesCard = ({data})=>{
       <p>Genere:{genre}</p>
       <a href={watch_url} target="_blank"><button>Watch Now</button></a>
       <hr />
+      {/* <p>{greeting}</p>
+      <p>{children}</p> */}
       </li>
       
     
