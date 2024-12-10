@@ -1,17 +1,25 @@
 
-export const SeriesCard = (props)=>{
-  console.log(props);
+export const SeriesCard = ({data})=>{
+  // console.log(props);
+  const {name,
+    img_url,
+    rating,
+    description,
+    cast,
+    genre,
+    watch_url} = data;
+
   return(
           
     <li>
       <div>
-        <img src={props.curEle.img_url} alt={props.curEle.name} width="20%" height="30%"/>
+        <img src={img_url} alt={name} width="20%" height="30%"/>
       </div>
-      <h3>Name:{props.curEle.name}</h3>
-      <h5>Rating:{props.curEle.rating}</h5>
-      <p>{props.curEle.description}</p>
-      <p>Genere:{props.curEle.genre}</p>
-      <a href={props.curEle.watch_url} target="_blank"><button>Watch Now</button></a>
+      <h3>Name:{name}</h3>
+      <h5>Rating:{rating}</h5>
+      <p>{description}</p>
+      <p>Genere:{genre}</p>
+      <a href={watch_url} target="_blank"><button>Watch Now</button></a>
       <hr />
       </li>
       
