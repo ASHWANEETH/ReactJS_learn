@@ -23,12 +23,16 @@
 // Combined Export and Import: combine default and named exports in a single file for more efficient code management.
 //-----Use both exports one default and many named------for import--- import default,{named_1,named_n...} from ".."
 import { NetFLixCard } from "./components/NetFlixseries";
+import "./App.css"
 
 export const App = ()=>{
   return (
     <>
+    <h2 className="title">Best Netflix Series</h2>
+    <div className="container">
       <NetFLixCard/>
-    </>
+    </div>
+      </>
   )
 };
 

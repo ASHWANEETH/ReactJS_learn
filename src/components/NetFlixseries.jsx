@@ -3,7 +3,7 @@ import { SeriesCard } from "./SeriesCard";
 export const NetFLixCard = ()=>{
  
   return(
-    <ul>
+    <ul className="grid grid3">
       {dataSeries.map((curEle)=> <SeriesCard  
       key={curEle.id} 
       data={curEle} 

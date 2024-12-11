@@ -1,4 +1,4 @@
-
+import "../components/SeriesCard.css";
 export const SeriesCard = ({data,
   // greeting,children
   })=>{
@@ -7,26 +7,30 @@ export const SeriesCard = ({data,
     img_url,
     rating,
     description,
-    cast,
     genre,
     watch_url} = data;
 
   return(
-          
-    <li>
+    <div className="card">
+
+    <li className="card-cont">
+ 
       <div>
-        <img src={img_url} alt={name} width="20%" height="30%"/>
+        <img src={img_url} alt={name} className="cardImg"/>
       </div>
+      <div className="li-text">
       <h3>Name:{name}</h3>
-      <h5>Rating:{rating}</h5>
+      <h5><span className={`rating  ${rating>=8 ? "Good":"Avg"}`}>Rating:{rating}</span></h5>
       <p>{description}</p>
       <p>Genere:{genre}</p>
-      <a href={watch_url} target="_blank"><button>Watch Now</button></a>
-      <hr />
+      <a href={watch_url} target="_blank"><button className="Watch">Watch Now</button></a>
       {/* <p>{greeting}</p>
       <p>{children}</p> */}
+      </div>
+
       </li>
+      </div>
       
-    
+    //for Inline CSS style will get objects in {} and attributes in camelCase
     );
 }
