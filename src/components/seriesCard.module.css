@@ -26,18 +26,22 @@
   box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.2) ;
 }
 
-.Watch{
+/* .Watch{
   padding: 2px;
   color: rgb(255, 255, 255);
   background-color: black;
-  /* display: inline-block; */
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  /* position: relative; */
+  
+  transition: transform 0.3s ease, background-color 0.3s ease; 
 }
 .Watch:hover{
   background-color: rgb(83, 72, 72);
   transform: scale(1.2);
-}
+  }
+
+  
+  Styled using styled-components in jsx file
+  */
+
 
 .Good{
   background-color: rgb(81, 219, 81);
