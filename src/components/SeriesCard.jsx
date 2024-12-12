@@ -40,7 +40,7 @@ export const SeriesCard = ({data,
         <img src={img_url} alt={name} className={styles.cardImg}/>
       </div>
 
-      <div className={styles["li-text"]}>
+      <div className="flex flex-col px-1 py-2 gap-2" >
         <h3>Name:{name}</h3>
         <h5><span className={`${styles.rating}  ${rating>=8 ? styles.Good:styles.Avg}`}>Rating:{rating}</span></h5>
         <p>{description}</p>

@@ -1,12 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .body{
   margin: 0;
   padding: 0;
 }
 .grid{
- display: flex;
- flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: space-around;
   padding: 0;
   gap: 5px;
@@ -22,5 +27,5 @@ a{
 
 .container{
   /* width: 90%; */
-  padding:0 20%;
+  padding:0 2rem;
 }
