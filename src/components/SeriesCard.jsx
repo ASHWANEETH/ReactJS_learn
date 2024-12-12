@@ -14,7 +14,7 @@ export const SeriesCard = ({data,
 
   // Styled-components
 
-  // const WatchBtn = styled.button(){}
+  // const WatchBtn = styled.button(){color:"grey",...}
   //-----OR----
   // pure css must be added in `...`
   // for conditional styling u can pass props and recieve as a function
