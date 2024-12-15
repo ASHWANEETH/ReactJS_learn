@@ -1,4 +1,4 @@
-import dataSeries from "../api/dataSeries.json"
+import dataSeries from "../../api/dataSeries.json"
 import { SeriesCard } from "./SeriesCard";
 export const NetFLixCard = ()=>{
  

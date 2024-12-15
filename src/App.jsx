@@ -22,18 +22,51 @@
 
 // Combined Export and Import: combine default and named exports in a single file for more efficient code management.
 //-----Use both exports one default and many named------for import--- import default,{named_1,named_n...} from ".."
-import { NetFLixCard } from "./components/NetFlixseries";
+
+//----------------------------------------------------------------------..........-----------------------
+
+// import { NetFLixCard } from "./components/netflixCard/NetFlixseries";
 import "./App.css"
 
 export const App = ()=>{
+  
+
   return (
     <>
-    <h2 className="title">Best Netflix Series</h2>
-    <div className="container">
-      <NetFLixCard/>
-    </div>
+    
       </>
   )
 };
+
+{/* <h2 className="title">Best Netflix Series</h2> */}
+
+    {/* <div className="container"> */}
+
+    //event handler-----------------------------------------------------
+    //fun
+          // const handleClick = (prop)=>{
+          //   alert(`Hi ${prop}`);
+          // }
+
+
+      {/* <button onClick={handleClick}>Event Handle button</button>
+      {/* <button onClick={handleClick("prop obj")}>Event Handle button</button>  
+
+      calls without clicking when using props, 
+      must call without() when not using props, when using props use arrow func
+      --------------
+      returns a event object called SyntheticEventBase which is wraped obj of evnt
+      You can pass event as props to child component
+      
+      <Child click={()=>{handleClick("pappu")}}
+      */}
+
+      {/* <button onClick={()=>handleClick("prop obj")}>Event Handle with props</button> */} 
+      //--------------------------------------------------------------------
+
+      {/* <NetFLixCard/> */}
+
+
+    {/* </div> */}
 
 

@@ -1,4 +1,4 @@
-import styles from "../components/SeriesCard.module.css";
+import styles from "./seriesCard.module.css";
 
 import styled from "styled-components";
 export const SeriesCard = ({data,
