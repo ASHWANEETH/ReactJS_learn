@@ -26,47 +26,60 @@
 //----------------------------------------------------------------------..........-----------------------
 
 // import { NetFLixCard } from "./components/netflixCard/NetFlixseries";
+import { useState } from "react";
 import "./App.css"
 
 export const App = ()=>{
+  
+  const [value,setValue] = useState(0);
+
+  const onClick=()=>{
+    setValue(()=>{value+1});
+  };
+
   
 
   return (
     <>
     
-      </>
+    <h2>{value}</h2>
+    <br />
+    <button onClick={onClick}>Inc</button>
+    </>
   )
 };
 
-{/* <h2 className="title">Best Netflix Series</h2> */}
+    
 
-    {/* <div className="container"> */}
-
-    //event handler-----------------------------------------------------
+    //--------------------------event handler-----------------------------------------------------
     //fun
           // const handleClick = (prop)=>{
           //   alert(`Hi ${prop}`);
           // }
 
-
       {/* <button onClick={handleClick}>Event Handle button</button>
       {/* <button onClick={handleClick("prop obj")}>Event Handle button</button>  
 
       calls without clicking when using props, 
-      must call without() when not using props, when using props use arrow func
-      --------------
-      returns a event object called SyntheticEventBase which is wraped obj of evnt
+      must call without() when not using props, when using props use arrow func,
+      returns a event object called """SyntheticBaseEvent""" which is wraped obj of evnt
       You can pass event as props to child component
       
+        EVENT PROPOGATION 
+        capture ---> grand parent -> parent -> child
+        bubbling ---> child -> parent -> grand parent
+
+        react use bubbling as js // 
+        // to use capture in react use Capture suffix like ->onClickCapture()
+        propagation can be stoped using event.stopPropagation()
+
       <Child click={()=>{handleClick("pappu")}}
       */}
 
       {/* <button onClick={()=>handleClick("prop obj")}>Event Handle with props</button> */} 
+      
       //--------------------------------------------------------------------
 
-      {/* <NetFLixCard/> */}
-
-
-    {/* </div> */}
+      
 
 
